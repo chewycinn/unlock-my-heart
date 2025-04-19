@@ -1,14 +1,16 @@
 body {
     background-color: #f8e1f4; /* Soft pastel background */
-    font-family: 'Gloria Hallelujah', sans-serif;
-    text-align: center;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    height: 100vh; /* Full height for centering */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 .container {
-    position: relative;
-    margin-top: 100px;
+    text-align: center; /* Center text inside the container */
 }
 
 .heart {
