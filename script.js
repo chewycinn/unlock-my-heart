@@ -10,21 +10,16 @@ function typeWriter() {
     }
 }
 
-document.getElementById("unlock-button").addEventListener("click", function() {
+document.getElementById("unlock-button").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent form submission
     const password = document.getElementById("password").value;
     if (password === "IV-V-MMXXV") { // Replace with your actual password
         document.getElementById("locked-heart").classList.add("hidden");
         document.getElementById("unlocked-heart").classList.remove("hidden");
         document.getElementById("overlay").classList.remove("hidden");
-        document.getElementById("mygirl.mp3").play();
+        document.getElementById("mygirl").play(); // Corrected ID
         typeWriter(); // Start typing effect
     } else {
-        alert("Incorrect password. Please try again.");
-    }
-});
-
-document.getElementById("close-letter").addEventListener("click", function() {
-    document.getElementById("overlay").classList.add("hidden");
-    document.getElementById("message").innerHTML = ""; // Clear message for next time
-    index = 0; // Reset index for next typing
-});
+        // Display error message in the UI instead of alert
+        document.getElementById("message").innerText = "Incorrect password. Please try again.";
+   
