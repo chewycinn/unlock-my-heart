@@ -72,7 +72,7 @@ button {
 }
 
 .letter {
-    background: url('paper-texture.png') no-repeat center center; /* Add your paper texture */
+    background: url('https://i.pinimg.com/736x/63/63/68/636368ee10bb9d1b18f24d978b6820b1.jpg') no-repeat center center; /* Add your paper texture */
     background-size: cover;
     padding: 20px;
     border-radius: 10px;
@@ -91,7 +91,9 @@ button {
     border-right: 5px solid black; /* Cursor effect */
     width: 0; /* Start with width 0 */
     animation: typing 20s steps(100, end), blink-caret 0.75s step-end infinite;
-}
+    font-weight: bold; 
+
+} 
 
 @keyframes typing {
     from { width: 0; }
