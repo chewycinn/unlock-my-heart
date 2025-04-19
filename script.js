@@ -17,4 +17,7 @@ function typeWriter() {
 
 document.getElementById("unlock-button").addEventListener("click", function(event) {
     event.preventDefault(); // Prevent form submission
-    const password = document
+    const password = document.getElementById("password").value;
+    if (password === "IV-V-MMXXV") { // Replace with your actual password
+        document.getElementById("locked-heart").classList.add("hidden");
+       
