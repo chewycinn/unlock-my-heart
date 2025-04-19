@@ -1,6 +1,6 @@
 document.getElementById('unlock-button').addEventListener('click', function() {
     const password = document.getElementById('password').value;
-    const correctPassword = "yourPassword"; // Set your password here
+    const correctPassword = "IV-V-MMXXV"; // Set your password here
 
     if (password === correctPassword) {
         unlockHeart();
@@ -34,8 +34,8 @@ function unlockHeart() {
         <p>That means I love every version of you, even the darker sides. And I’ll be here through all of it. I want to give you all that I have, even when you're not at your best.</p>
         <p>And in your full moon phase, when you’re feeling your fullest and brightest, I want to be there, cheering you on, building dreams with you, and celebrating every moment until the hard days finally pay off.</p>
         <p>I want you to always remember where you came from to look back and reflect on how much you've grown along the way.</p>
-        <p>And most of all, I want to walk beside you through it all — every step, every season, every chapter.</p>
-        <p>You’ll never be alone, baby. I’m yours — completely. Always.</p>
+        <p>And most of all, I want to walk beside you through it all every step, every season, every chapter.</p>
+        <p>You’ll never be alone, baby. I’m yours completely. Always.</p>
         <p>I love you endlessly. 🫶🌙</p>
     `;
 
