@@ -16,7 +16,7 @@ document.getElementById("unlock-button").addEventListener("click", function() {
         document.getElementById("locked-heart").classList.add("hidden");
         document.getElementById("unlocked-heart").classList.remove("hidden");
         document.getElementById("overlay").classList.remove("hidden");
-        document.getElementById("love-song").play();
+        document.getElementById("mygirl.mp3").play();
         typeWriter(); // Start typing effect
     } else {
         alert("Incorrect password. Please try again.");
