@@ -88,7 +88,7 @@ button {
     font-size: 1.2em;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 5px solid black; /* Cursor effect */
+    border-right: 5px hot pink; /* Cursor effect */
     width: 0; /* Start with width 0 */
     animation: typing 20s steps(100, end), blink-caret 0.75s step-end infinite;
     font-weight: bold; 
