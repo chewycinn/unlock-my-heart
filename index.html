@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unlock my heart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heart" id="heart">
+            <img src="locked-heart.png" alt="Locked Heart" id="locked-heart">
+            <img src="unlocked-heart.png" alt="Unlocked Heart" id="unlocked-heart" class="hidden">
+            <div class="chain" id="chain"></div>
+        </div>
+        <div class="password-prompt" id="password-prompt">
+            <input type="password" id="password" placeholder="Enter the password">
+            <button id="unlock-button">unlock</button>
+        </div>
+    </div>
+    <div class="overlay hidden" id="overlay">
+        <div class="letter" id="letter">
+            <div class="letter-content" id="letter-content"></div>
+            <button id="close-letter">close</button>
+        </div>
+    </div>
+    <audio id="love-song" src="love-song.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
