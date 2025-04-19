@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>unlock my heart</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Unlock My Heart</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="heart" id="heart">
-            <img src="https://i.pinimg.com/originals/40/2b/f5/402bf5ee292c4de45755be158115f743.gif" alt="Locked Heart" id="locked-heart">
-            </div>
+            <img src="locked-heart.png" alt="Locked Heart" id="locked-heart">
+            <img src="unlocked-heart.png" alt="Unlocked Heart" id="unlocked-heart" class="hidden">
+            <div class="chain" id="chain"></div>
+        </div>
         <div class="password-prompt" id="password-prompt">
             <input type="password" id="password" placeholder="Enter the password">
-            <button id="unlock-button">unlock</button>
+            <button id="unlock-button">Unlock</button>
         </div>
     </div>
     <div class="overlay hidden" id="overlay">
         <div class="letter" id="letter">
-            <div class="letter-content" id="letter-content"></div>
-            <button id="close-letter">close</button>
+            <div class="letter-content" id="message"></div>
+            <button id="close-letter">Close</button>
         </div>
     </div>
-    <audio id="mygirl" src="mygirl.mp3"></audio>
+    <audio id="love-song" src="love-song.mp3" preload="auto"></audio>
     <script src="script.js"></script>
 </body>
 </html>
