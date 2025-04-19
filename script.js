@@ -3,23 +3,18 @@ const message = "I don’t really know where to begin, because no words could ev
 let index = 0;
 
 function typeWriter() {
-    if (index < message.length) {
-        document.getElementById("message").innerHTML += message.charAt(index);
-        index++;
-        setTimeout(typeWriter, 50); // Adjust typing speed here
+    document.getElementById("message").innerHTML = ""; // Clear previous message
+    index = 0; // Reset index for typing
+    function type() {
+        if (index < message.length) {
+            document.getElementById("message").innerHTML += message.charAt(index);
+            index++;
+            setTimeout(type, 50); // Adjust typing speed here
+        }
     }
+    type();
 }
 
 document.getElementById("unlock-button").addEventListener("click", function(event) {
     event.preventDefault(); // Prevent form submission
-    const password = document.getElementById("password").value;
-    if (password === "IV-V-MMXXV") { // Replace with your actual password
-        document.getElementById("locked-heart").classList.add("hidden");
-        document.getElementById("unlocked-heart").classList.remove("hidden");
-        document.getElementById("overlay").classList.remove("hidden");
-        document.getElementById("mygirl").play(); // Corrected ID
-        typeWriter(); // Start typing effect
-    } else {
-        // Display error message in the UI instead of alert
-        document.getElementById("message").innerText = "Incorrect password. Please try again.";
-   
+    const password = document
